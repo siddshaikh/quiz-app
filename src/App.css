@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.questions {
+  margin: 20px auto;
+  width: 60%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.questions h2 {
+  margin-bottom: 10px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items in one row */
+  gap: 10px;
+}
+
+.options li button {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+button:hover {
+  background-color: #ddd;
+}
+
+.results {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results button {
+  color: red;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li[data-correct="true"] {
+  color: green;
+}
+.results li[data-correct="false"] {
+  color: red;
+}
